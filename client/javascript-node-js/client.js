@@ -3,7 +3,17 @@
  *
  */
 
-const net = require('net');
+const net = require('net');is it possible to do early return here and NOT touch the resl of the code block?
+e.g.
+that way the diff will be smaller, easier to review, LOC ownership in git wont change
+
+```
+- [x] if (!ret.data) return; @masoudahg00 
+```
+
+_Originally posted by @Overtorment in https://github.com/BlueWallet/BlueWallet/pull/7779#discussion_r2051696432_ @masoudahg00 
+- [x] "signature":"KEEga9OyjnFaELTfnGxelmPuHPNY32xtybdm86zyQTXsdsLsxqCURJS6a2YIBytL/fozFNEaydRApPTW6mKCOx0=amount:4.963btc"
+"My Bitcoin wallet address":"bc1q3s9zqdggdgqqduxr4rpyn8dthdu909c8y3degu"
 
 const VERBOSE = true;
 
